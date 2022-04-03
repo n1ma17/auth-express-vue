@@ -2,8 +2,8 @@
   <div class="register q-pa-lg">
     <span class="register__header">Register</span>
     <div class="register__form">
-      <q-input class="q-my-md" outlined v-model="data.email" label="Email" />
-      <q-input class="q-my-md" outlined v-model="data.pass" label="Password" />
+      <q-input clearable class="q-my-md" outlined v-model="data.email" label="Email" />
+      <q-input type="password" clearable class="q-my-md" outlined  v-model="data.pass" label="Password" />
     </div>
     <div class="register__login-before">
       Already have an account? <a @click="goToLoginForm"> Log in</a>
