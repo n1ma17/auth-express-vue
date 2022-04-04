@@ -3,6 +3,7 @@
     <span class="login__header">Login</span>
     <div class="login__form">
       <q-input
+        clearable
         class="q-my-md"
         outlined
         v-model="data.email"
@@ -13,6 +14,8 @@
         outlined
         v-model="data.pass"
         label="Password"
+        type="password"
+        clearable
       />
     </div>
     <div class="row justify-between">
@@ -33,21 +36,21 @@
 import { toRef } from "vue";
 export default {
   name: "Login",
-  emits:['registerd'],
+  emits: ["registerd"],
   props: {
     formData: {
       type: Object,
-      default: ()=>{},
+      default: () => {},
     },
   },
   setup(props, context) {
     const data = toRef(props, "formData");
-    function routeToRegister () {
-        context.emit('registered', false)
+    function routeToRegister() {
+      context.emit("registered", false);
     }
     return {
       data,
-      routeToRegister
+      routeToRegister,
     };
   },
 };
