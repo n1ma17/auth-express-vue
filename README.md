@@ -21,11 +21,11 @@ i use jwt for generate access token and refresh token
 
 >> **Description**
 
-- first of all i wrote two functions, one for generate access token and another for generate refresh token, after generated refresh token pushed it in a list called refreshTokensList  
+- first of all i create two functions, one for generate access token and another for generate refresh token, after generated refresh token pushed it in a list called refreshTokensList  
 
-- i wrote a method for take an old refresh token from user and then generate new access token and new refresh token  
-- i wrote a post method for login the user, take username and password from user and then return an object with access token and refresh token  
-- i wrote two other methodes for delete and logout the users  
+- i create a method to take an old refresh token from user and then generate new access token and new refresh token  
+- i create a post method for login the user, take username and password from user and then return an object with access token and refresh token  
+- i create two other methodes for delete and logout the users  
 
 
 >> **Project setup**  
